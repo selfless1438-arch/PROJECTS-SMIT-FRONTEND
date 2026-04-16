@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: beige;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    padding: 20px 40px;
+    margin: auto;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 28px;
+    color: brown;
+}
+
+.month-cont {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.month-cont a {
+    background-color: brown;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: beige;
+    padding: 10px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.month-cont a span {
+    position: relative;
+    z-index: 2;
+}
+
+.month-cont a .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #574e20;
+    transition: all 0.3s linear;
+}
+
+.month-cont a:hover .bg {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .month-cont {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .month-cont {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .month-cont {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
