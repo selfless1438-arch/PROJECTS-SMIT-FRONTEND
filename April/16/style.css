@@ -15,13 +15,19 @@ body {
     position: fixed;
     right: 20px;
     top: 20px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    width: 70px;
+    border-radius: 1000px;
 }
 
 .toggle button {
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 1000px;
     border: none;
+    background-color: #2c2a29;
+    position: absolute;
 }
 
 main {
@@ -76,9 +82,11 @@ main {
     margin-bottom: 10px;
     font-weight: 500px;
 }
-.profile-card .content h3 svg{
+
+.profile-card .content h3 svg {
     color: goldenrod;
 }
+
 .profile-card.light .content h3 {
     color: #423f3c;
 }
